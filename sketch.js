@@ -8,13 +8,14 @@ function setup() {
   wall=createSprite(1300, 200, 60, height/2);
   wall.shapeColor=(80,80,80)
   car.shapeColor="black";
+  speed=random(55,90);
+  weight=random(400,1500);
 }
 
 function draw() {
   background(255,255,255);
-  if(car.shapeColor==="black"){
-  speed=random(55,90);
-  weight=random(400,1500);}
+  
+  
   car.velocityX=speed;
   if(wall.x-car.x<car.width/2 + wall.width/2 )
   {
